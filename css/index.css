@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+}
+
+/* Typography */
+body{
+    font-family: "Inter", sans-serif;
+    color: #363636;
+}
+
+h1{
+    color: rgb(7, 173, 173);
+}
+
+/* Layout */
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #FFFFFF;
+    z-index: 100;
+    border-bottom: 1px solid rgb(7, 173, 173);
+}
+
+.header-container{
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    background-color: #FFFFFF;
+}
+
+.form-container,
+.post-container{
+    z-index: 99;
+    transform: translateY(-300px);
+    transition: transform 1.2s;
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.post-btn{
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: rgb(7, 173, 173);
+    letter-spacing: 2px;
+}
+
+.post{
+    padding: 0 1em 0.5em;
+}
+
+.post-container{
+    padding-top: 2em;
+}
+
+.post-title{
+    text-transform:capitalize;
+}
+
+.post-body{
+    line-height: 1.6;
+}
+
+.form-container{
+    padding: 2em;
+    background-color: aqua;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+input,
+textarea,
+label{
+    width: 100%;
+
+}
+
+label{
+    margin-bottom: 0.5em;
+    font-size: 0.8rem;
+}
+
+input,
+textarea{
+    margin-bottom: 1em;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+
+input{
+    padding: 0.5em
+}
+
+textarea{
+    min-height: 6em;
+}
+
+.submit-btn{
+    align-self: center;
+    padding: 0.7em 1.5em;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(247, 114, 4);
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover,
+.submit:focus{
+    background-color: rgb(235, 78, 21);
+    box-shadow: 1px 1px 6px rgb(168, 168, 168);
+}
+
+footer{
+    background-color: rgb(7, 173, 173);
+    padding: 2em 0;
+    margin-top: auto;
+}
+
+footer p{
+    margin: 0;
+    font-size: smaller;
+    color: rgba(0, 0, 0,0.4);
+    text-align: center;
+}
